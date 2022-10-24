@@ -3,7 +3,6 @@ package hiber.service;
 import hiber.dao.UserDao;
 import hiber.model.User;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
