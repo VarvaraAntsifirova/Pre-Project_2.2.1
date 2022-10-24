@@ -26,7 +26,7 @@ public class MainApp {
       userService.add(new User("User3", "Lastname3", "user3@mail.ru", car3));
       userService.add(new User("User4", "Lastname4", "user4@mail.ru", car4));
 
-      List<User> users = userService.listUsers();
+      List<User> users = userService.getListUsers();
       for (User user : users) {
          System.out.println("Id = " + user.getId());
          System.out.println("First Name = " + user.getFirstName());
@@ -35,7 +35,7 @@ public class MainApp {
          System.out.println("Car = " + user.getCar());
          System.out.println();
       }
-      userService.findByCar("BMg", 670);
+      userService.findUserByCar("BMg", 670);
 
       context.close();
    }
